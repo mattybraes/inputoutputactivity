@@ -1,6 +1,7 @@
 package com.example.inputoutact1
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // get the button using the id we set on the user interface
-        val clickMeButton = findViewById<Button>(R.id.clickMeButton)
+        val clickMeButton = findViewById<Button>(R.id.clickmebutton)
 
         // add code to the code to the button that happens when it is clicked
         clickMeButton?.setOnClickListener {
