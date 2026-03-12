@@ -2,6 +2,8 @@ package com.example.inputoutact1
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,8 +16,13 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        val clickmebutton =findViewById<Button>(R.id.clickmebutton)
+        val welcomeTxt = findViewById<TextView>(R.id.displayTxt)
+        val nameTxtField = findViewById<EditText>(R.id.nameTxt)
+
+
         // get the button using the id we set on the user interface
-        val clickMeButton = findViewById<Button>(R.id.clickmebutton)
+        // val clickMeButton = findViewById<Button>(R.id.clickmebutton)
 
         // add code to the code to the button that happens when it is clicked
         clickMeButton?.setOnClickListener {
