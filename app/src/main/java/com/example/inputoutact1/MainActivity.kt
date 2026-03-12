@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.inputoutact1.R.id.nameTxt
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         // val clickMeButton = findViewById<Button>(R.id.clickmebutton)
 
         // add code to the code to the button that happens when it is clicked
-        clickMeButton?.setOnClickListener {
+        clickmebutton?.setOnClickListener {
             Toast.makeText(this@MainActivity,
                    "Button clicked", Toast.LENGTH_LONG).show()
         }
