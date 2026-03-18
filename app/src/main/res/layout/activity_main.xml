@@ -43,4 +43,14 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="501dp" />
 
+    <Switch
+        android:id="@+id/zuluSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zulu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="229dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
