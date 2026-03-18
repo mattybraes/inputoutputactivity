@@ -40,14 +40,16 @@ class MainActivity : AppCompatActivity() {
             val zuluSwitch = findViewById<Switch>(R.id.zuluSwitch)
             //when button is clicked the code is activated
             var greeting: String
-
+            var age = 18
             var zulu: Boolean = zuluSwitch.isChecked
             if (zulu)
                 greeting = "Sawubona, ${nameTxtField}!"
             else {
-                if (nameTxtField.text.toString() == "sam" ||
-                    nameTxtField.text.toString() == "samantha"
-                ) {
+                if ((nameTxtField.text.toString() == "bobby boon" ||
+                            nameTxtField.text.toString() == "bob")
+                    && age > 18)
+
+                {
                     greeting = "yo, ${nameTxtField}!"
 
                     greeting = "Greetings, ${nameTxtField}!"
