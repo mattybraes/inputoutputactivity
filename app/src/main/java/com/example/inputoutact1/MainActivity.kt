@@ -14,6 +14,20 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.inputoutact1.R.id.nameTxt
 
 class MainActivity : AppCompatActivity() {
+
+     enum class Languages {
+        ENGLISH,
+        NDEBELE,
+        PEDI,
+        SOTHO,
+        SWATI,
+        TSONGA,
+        TSWANA,
+        VENDA,
+        XHOSA,
+        ZULU,
+        AFRIKAANS
+     }
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
