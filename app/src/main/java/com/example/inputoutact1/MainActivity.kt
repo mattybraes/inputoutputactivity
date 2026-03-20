@@ -2,8 +2,10 @@ package com.example.inputoutact1
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Spinner
 import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
@@ -35,8 +37,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val clickmebutton = findViewById<Button>(R.id.clickmebutton)
-        val welcomeTxt = findViewById<TextView>(R.id.nameTxt)
+        val welcomeTxt = findViewById<TextView>(nameTxt)
         val nameTxtField = findViewById<EditText>(R.id.displayTxt)
+        findViewById<Spinner>(R.id.languageSpin)
+
+        //set up spinner options
+        val languageSpinner = findViewById<Spinner>(R.id.languageSpin)
+        languageSpinner.adapter = ArrayAdapter<Languages>(this,
+            android.R.layout.simple_list_item_1, Languages.values())
+
 
         // get the button using the id we set on the user interface
         // val clickMeButton = findViewById<Button>(R.id.clickmebutton)
@@ -53,9 +62,7 @@ class MainActivity : AppCompatActivity() {
             //switching between 2 languages. zulu and english
             val zuluSwitch = findViewById<Switch>(R.id.zuluSwitch)
             //when button is clicked the code is activated
-            var greeting: String
-            var age = 18
-            var zulu: Boolean = zuluSwitch.isChecked
+            zuluSwitch.isChecked
 //            if (zulu)
 //                greeting = "Sawubona, ${nameTxtField}!"
 //            else {
