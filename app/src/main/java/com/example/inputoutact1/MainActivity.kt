@@ -56,24 +56,24 @@ class MainActivity : AppCompatActivity() {
             var greeting: String
             var age = 18
             var zulu: Boolean = zuluSwitch.isChecked
-            if (zulu)
-                greeting = "Sawubona, ${nameTxtField}!"
-            else {
-                if ((nameTxtField.text.toString() == "bobby boon" ||
-                            nameTxtField.text.toString() == "bob")
-                    && age > 18)
-
-                {
-                    greeting = "yo, ${nameTxtField}!"
-
-                    greeting = "Greetings, ${nameTxtField}!"
-                } else {
-                    greeting = "greetings, ${nameTxtField.text}!"
-                }
-
-
-
-                welcomeTxt.text = greeting
+//            if (zulu)
+//                greeting = "Sawubona, ${nameTxtField}!"
+//            else {
+//                if ((nameTxtField.text.toString() == "bobby boon" ||
+//                            nameTxtField.text.toString() == "bob")
+//                    && age > 18)
+//
+//                {
+//                    greeting = "yo, ${nameTxtField}!"
+//
+//                    greeting = "Greetings, ${nameTxtField}!"
+//                } else {
+//                    greeting = "greetings, ${nameTxtField.text}!"
+//                }
+//
+//
+//
+//                welcomeTxt.text = greeting
 
 
             }
@@ -86,4 +86,4 @@ class MainActivity : AppCompatActivity() {
                 insets
             }
         }
-    }}
+    }
